@@ -37,7 +37,7 @@ router.get('/voter/:id', (req, res) => {
   });
 
 
-//UPDATES voters
+//Creates
 router.post('/voter', ({ body }, res) => {
     // Data validation
     const errors = inputCheck(body, 'first_name', 'last_name', 'email');
@@ -60,7 +60,7 @@ router.post('/voter', ({ body }, res) => {
     });
   });
 
-
+//UPDATES enail address
 router.put('/voter/:id', (req, res) => {
     // Data validation
     const errors = inputCheck(req.body, 'email');
